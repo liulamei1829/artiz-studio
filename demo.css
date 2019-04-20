@@ -1,20 +1,71 @@
 *{
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 12px;
+  font-family: "Times New Roman", "Microsoft YaHei", Times, serif;
   border: 0;
   box-sizing: border-box;
 }
-.font-13{
-  font-size: 13px;
+.topwprds{
+  width: 300px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #333;
 }
-.font-12{
-  font-size: 12px;
+.menu{
+  height: 40px;
+  border-top: 3px #333333 solid;
+  border-bottom: 1px #333333 solid;
+  width: 960px;
+  margin: auto;
+  position: fixed;
+  top: 90px;
+  z-index: 999;
+  background: #FFFFFF;
+  margin-left: 7px;
 }
-li{
+ul {
   list-style-type: none;
 }
-
+ul li a:hover{
+  color:#f00;
+  cursor: pointer;
+}
+nav ul li a{
+  width: 120px;
+  height: 40px;
+  font-size: 13px;
+  line-height: 32px;
+  text-align: center;
+  float: left;
+  padding-top: 3px;
+  color: #333333;
+  text-decoration: none;
+  display: block;
+}
+.toindex{
+  position: absolute;
+  left:0;
+  top:36px;
+}
+.logo{
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  margin-left: -127px;
+}
+.tel{
+  width: 200px;
+  height: 63px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  text-align: right;
+}
+.fs-16{
+  font-size: 16px;
+}
 html,body{
   width: 100%;
 }
@@ -38,15 +89,6 @@ html,body{
 .fixed{
   position: fixed;
 }
-.left50percent{
-  left:50%;
-}
-.marginleft-negative127{
-  margin-left: -127px;
-}
-.top-36{
-  top: 36px;
-}
 .line-top{
   border-top: 3px solid #333;
 }
@@ -56,32 +98,47 @@ html,body{
 .width-120{
   width: 120px;
 }
+.height-220{
+  height: 220px;
+}
 .heigth-40{
   height: 40px;
 }
 .line-height{
   line-height:40px;
 }
+.bg-f1f2f9{
+  background: #F1F2F9;
+}
 .aside{
   left:0;
-  top:75.6px;
-  width: 122px;
-  height: 327px;
+  top: 144.6px;
+  line-height: 0;
+}
+.outline-0{
+  outline: 0;
+}
+.pl-5{
+  padding-left: 5px;
 }
 .askonline{
-  width: 88px;
-  height: 28px;
   top: 174px;
   left: 16px;
   background-color: #040e14;
+  font-size: 12px;
   color: #fff;
-  padding:0 10px;
+  display: block;
+  width: 88px;
+  height: 28px;
+  text-align: center;
   line-height: 28px;
-  text-align:center;
+  border-radius: 2px; 
+  cursor: pointer;
   }
 .header{
   left:0;
   top:0;
+  background: #fff;
 }
 .height-90{
   height:90px;
@@ -92,8 +149,8 @@ html,body{
 .height-44{
   height: 44px;
 }
-.mt-134{
-  margin-top:134px;
+.margin-top-150{
+  margin-top:150px;
 }
 .clearfix::after{
   visibility: hidden;
@@ -114,9 +171,6 @@ html,body{
 .height-28{
   height: 28px;
 }
-.height-220{
-  height: 220px;
-}
 .wigth-120{
   width: 120px;
 }
@@ -126,13 +180,13 @@ html,body{
 .border-box-blue{
   border: 1px solid rgb(206, 213, 224);
 }
-.mt-10{
+.margin-top-10{
   margin-top: 10px;
 }
-.ml-6{
+.margin-left-6{
   margin-left: 6px;
 }
-.mt-8{
+.margin-top-8{
   margin-top: 8px;
 }
 .width-88{
@@ -144,11 +198,91 @@ html,body{
 .bgc-851121{
   background-color:#851121;
 }
-.bgc-F1F2F9{
-  background: #F1F2F9;
+.contjianjie{
+  width: 260px;
+  height: auto;
+  float: left;
+  margin-left: 20px;
 }
-.p-5{
-  padding: 5px;
+.contpic{
+  width: 680px;
+  height: auto;
+  float: left;
 }
+.contpic img{
+  max-width: 680px;
+}
+.lg{
+  width: 260px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #111;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.titpic{
+  width: 260px;
+  height: 81px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+}
+.rtit{
+  width: 260px;
+  height: 40px;
+  border-bottom: 1px #CCCCCC solid;
+  margin-top: 20px;
+}
+.c, .e{
+  font-size: 12px;
+  line-height: 20px;
+}
+.czlg{
+  width: 260px;
+  height: auto;
+  font-size: 14px;
+  line-height: 22px;
+  color: #999999;
+  overflow: hidden;
+}
+.footermenu{
+  width: 960px;
+  height: auto;
+  border-top: 2px #000000 solid;
+  margin-top: 12px;
+  margin: auto;
+  padding-top: 0px;
+}
+.clearfix:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ".";
+  clear: both;
+}
+.fmenu{
+  width: 150px;
+  height: 180px;
+  float: left;
+  margin-right: 40px;
+  padding-top: 20px;
+  margin-left: 10px;
+}
+.fcopy{
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 40px;
+  padding-top: 30px;
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #333333;
+}
+.fmenu ul li a{
+  font-size: 12px;
+  line-height: 28px;
+}
+
 
 
