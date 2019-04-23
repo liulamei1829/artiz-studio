@@ -38,14 +38,15 @@
   </header>
   <section class="width-960 horizontal-center margin-top-150 clearfix">
     <div class="contpic">
-      <img class="display-block" src="yj.img//1-1611151U228.jpg">
+
+      <!-- <img class="display-block" src="yj.img//1-1611151U228.jpg">
       <img class="display-block" src="yj.img//1-1611151U229.jpg">
       <img class="display-block" src="yj.img//1-1611151U229-50.jpg">
       <img class="display-block" src="yj.img//1-1611151U229-51.jpg">
       <img class="display-block" src="yj.img//1-1611151U229-52.jpg">
       <img class="display-block" src="yj.img//1-1611151U229-53.jpg">
       <img class="display-block" src="yj.img//1-1611151U230.jpg">
-      <img class="display-block" src="yj.img//1-1611151U230-50.jpg">
+      <img class="display-block" src="yj.img//1-1611151U230-50.jpg"> -->
     </div>
     <div class="contjianjie">
       <div>
@@ -148,6 +149,31 @@
       </div>
     </div>
   </footer>
+  <script>
+    function ajax(params) {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var result = JSON.parse(xhr.responseText);
+          params.success && params.success(result);
+        }
+      }
+      xhr.open(params.method, params.url, true);
+      xhr.send(null);
+    }
+    ajax({
+      url: '/index/dress_pic',
+      method: 'get',
+      success: function (result) {
+        var arr=result.data;
+        var _html='';
+        arr.map(function(item,index){
+          _html+='<img class="display-block" src="'+item.urls+'">';
+        })
+        document.getElementsByClassName('contpic')[0].innerHTML=_html;
+      }
+    })
+  </script>
 </body>
 
 </html>
