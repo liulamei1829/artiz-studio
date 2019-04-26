@@ -3,6 +3,7 @@ const bodyParser=require('body-parser');
 const indexRouter=require('./routes/index.js');
 //创建web服务器
 var server=express();
+console.log('open http://127.0.0.1:3000')
 server.listen(3000);
 //托管静态资源到public 下
 server.use(express.static('yj'));

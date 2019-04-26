@@ -111,6 +111,23 @@ INSERT INTO yj_laptop_pic VALUES
 (NULL,4,'http://127.0.0.1:3000/yi.img/05.jpg'),
 (NULL,4,'http://127.0.0.1:3000/yi.img/01.jpg'),
 (NULL,4,'http://127.0.0.1:3000/yi.img/02.jpg');
+#礼服展示数据库
+CREATE TABLE yj_dress_pic(
+  pid   INT  AUTO_INCREMENT PRIMARY KEY,
+  urls  VARCHAR(255)
+);
+# 插入图片
+INSERT INTO yj_dress_pic VALUES
+(NULL,'/yj.img/1-1611151U228.jpg'),
+(NULL,'/yj.img/1-1611151U229.jpg'),
+(NULL,'/yj.img/1-1611151U229-50.jpg'),
+(NULL,'/yj.img/1-1611151U229-51.jpg'),
+(NULL,'/yj.img/1-1611151U229-52.jpg'),
+(NULL,'/yj.img/1-1611151U229-53.jpg'),
+(NULL,'/yj.img/1-1611151U230.jpg'),
+(NULL,'/yj.img/1-1611151U230-50.jpg');
+
+
 #新闻数据库
 CREATE TABLE yj_news(
   nid   INT AUTO_INCREMENT PRIMARY KEY,
