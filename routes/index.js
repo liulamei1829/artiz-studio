@@ -7,20 +7,20 @@ var router=express.Router();
 router.get('/index_pic',(req,res)=>{
     // console.log(req.query)
     let sql=`select*from yj_laptop_pic`;
-    // pool.query(sql,(err,result)=>{
-    //     if (err) throw err;
-    //     res.send(result);
-    // })
+    pool.query(sql,(err,result)=>{
+        if (err) throw err;
+        res.send(result);
+    })
 })
 
 router.get('/dress_pic',(req,res)=>{
     // console.log(req.query)
     let sql=`select*from yj_dress_pic`;
-    // pool.query(sql,(err,result)=>{
-    //     res.send({
-    //         data: result
-    //     });
-    // })
+    pool.query(sql,(err,result)=>{
+        res.send({
+            data: result
+        });
+    })
 })
 
 //导出路由器
